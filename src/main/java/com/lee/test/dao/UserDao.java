@@ -6,7 +6,11 @@ import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
-@Mapper
+/**
+ *  use MapperScan in the App instead.
+ *  so comment out the annotation Mapper
+ */
+//@Mapper
 public interface UserDao {
 
     int saveUser(User user);

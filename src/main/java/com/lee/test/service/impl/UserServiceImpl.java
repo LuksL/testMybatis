@@ -22,6 +22,7 @@ public class UserServiceImpl implements UserServiece {
 
     @Override
     public List<User> findAll() {
+        System.out.println("test in findAll");
         return dao.getAllUser();
     }
 }

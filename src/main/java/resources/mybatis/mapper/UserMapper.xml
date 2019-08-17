@@ -11,4 +11,8 @@
     <select id="getAllUser" resultMap="userResultMap">
         select * from user
     </select>
+
+    <insert id="saveUser" >
+        insert into user (id,name) value (#{id},#{name})
+    </insert>
 </mapper>
